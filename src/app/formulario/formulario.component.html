@@ -1,0 +1,177 @@
+<!-- Navbar -->
+<nav class="mb-1 navbar navbar-expand-lg navbar navbar-light">
+  <img src="https://www.araujoibarra.com/img/logo.png" width="15%" class="navbar-brand">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+    aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <span style="padding-right:10px;">Jose Vasquez</span>
+          <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg" class="rounded-circle z-depth-0"
+            alt="avatar image" height="35">
+        </a>
+        <div class="dropdown-menu dropdown-menu-right dropdown-default"
+          aria-labelledby="navbarDropdownMenuLink-333">
+          <a class="dropdown-item" href="#">Profile</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav> 
+<!-- endnavbar --> 
+
+<!-- Form1 -->
+<div class="container">
+  <form  class="formulario" action="POST" name="form_register" enctype="multipart/form-data">
+    <!-- inputs form -->
+    <div>
+      <div class="text-center title">
+        <h4>REGISTRO DE EMPLEADO</h4>
+      </div>
+      <br>
+      <div class="text-center img">
+        <img src="https://www.tramvenegroup.com/clientes/images/user.png" width="12%" alt="">
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="inputUser">Usuario</label>
+          <input type="text" class="form-control" id="inputUser" >
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputNombre1">Primer Nombre</label>
+          <input type="text" class="form-control" id="inputNombre1">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputnombre2">Segundo Nombre</label>
+          <input type="text" class="form-control" id="inputNombre2">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputApellido1">Primer Apellido</label>
+          <input type="text" class="form-control" id="inputApellido1">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputApellido2">Segundo Apellido</label>
+          <input type="text" class="form-control" id="inputApellido2">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="inputDoc">Tipo de Documento</label>
+          <select id="inputDoc" class="form-control">
+            <option selected>C.C.</option>
+            <option>1</option>
+            <option>2</option>
+          </select>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputNumd">Numero de Documento</label>
+          <input type="text" class="form-control" id="inputNumd">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputExp">Fecha de Expedición</label>
+          <input type="text" class="form-control" id="inputExp">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="inputAdress">Dirección</label>
+          <input type="text" class="form-control" id="inputAdress">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputPhone">Celular</label>
+          <input type="text" class="form-control" id="inputPhone">
+        </div>
+         <div class="form-group col-md-4">
+          <label for="inputExt">EXT</label>
+          <input type="text" class="form-control" id="inputExt">
+        </div>
+      </div>
+    </div>
+    <hr>
+    <!-- Form2 -->
+    <div class="formulario">
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <input type="text" class="form-control" id="inputnombre2" placeholder="Sede">
+        </div>
+        <div class="form-group col-md-4">
+          <input type="text" class="form-control" id="inputuser" placeholder="Jefe">
+        </div>
+        <div class="form-group col-md-4">
+          <input type="text" class="form-control" id="inputnombre1" placeholder="Area">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <input type="text" class="form-control" id="inputuser" placeholder="Cargo">
+        </div>
+        <div class="form-group col-md-4">
+          <input type="text" class="form-control" id="inputnombre1" placeholder="Salario">
+        </div>
+        <div class="form-group col-md-4">
+          <input type="text" class="form-control" id="inputnombre2" placeholder="Salario en Letras">
+        </div>
+      </div>
+    </div>
+    <!-- Documentos Adjuntos -->
+    <div class="formulario">
+      <div class="text-center">
+        <h5>ADJUNTAR ARCHIVOS</h5>
+        <hr width="12%">     
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4">
+            <span>HOJAS DE VIDA</span>
+            <form class="form-inline center-block well" action="/" method="POST" enctype="multipart/form-data">
+              <div class="input-group">
+                  <label id="browsebutton" class="btn btn-default input-group-addon" for="my-file-selector" style="background-color:white">
+                      <input id="my-file-selector" type="file" style="display:none;">
+                      Browse...
+                  </label>
+                  <input id="label" type="text" class="form-control" readonly="">
+              </div>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <span>CERTIFICADOS</span>
+            <form class="form-inline center-block well" action="/" method="POST" enctype="multipart/form-data">
+              <div class="input-group">
+                  <label id="browsebutton" class="btn btn-default input-group-addon" for="my-file-selector" style="background-color:white">
+                      <input id="my-file-selector" type="file" style="display:none;">
+                      Browse...
+                  </label>
+                  <input id="label" type="text" class="form-control" readonly="">
+              </div>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <span>DIPLOMAS</span>
+            <form class="form-inline center-block well" action="/" method="POST" enctype="multipart/form-data">
+              <div class="input-group">
+                  <label id="browsebutton" class="btn btn-default input-group-addon" for="my-file-selector" style="background-color:white">
+                      <input id="my-file-selector" type="file" style="display:none;">
+                      Browse...
+                  </label>
+                  <input id="label" type="text" class="form-control" readonly="">
+              </div>
+            </form>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>  
+      <!-- Footer -->
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary btn-lg">Guardar</button>
+        <button type="button" class="btn btn-light btn-lg">Cancelar</button>
+      </div>
+    </div>
+  </form>
+</div>
+<!-- End Form -->
